@@ -42,7 +42,7 @@ void AAuraEffectActor::EndOverlap(UPrimitiveComponent* OverlappedComponent, AAct
 void AAuraEffectActor::BeginPlay()
 {
 	Super::BeginPlay();
-
+	
 	Sphere->OnComponentBeginOverlap.AddDynamic(this, &AAuraEffectActor::OnOverlap);
 	Sphere->OnComponentEndOverlap.AddDynamic(this, &AAuraEffectActor::EndOverlap);
 }
