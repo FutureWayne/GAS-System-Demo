@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "AbilitySystem/AuraAttributeSet.h"
 #include "UI/WidgetController/AuraWidgetController.h"
 #include "OverlayWidgetController.generated.h"
 
@@ -36,10 +35,4 @@ public:
 	virtual void BindCallbacksToDependencies() override;
 
 	virtual void BroadCastInitialValues() override;
-
-protected:
-	void HealthChangedCallback(const FOnAttributeChangeData& Data) const;
-	void MaxHealthChangedCallback(const FOnAttributeChangeData& Data) const;
-	void ManaChangedCallback(const FOnAttributeChangeData& Data) const;
-	void MaxManaChangedCallback(const FOnAttributeChangeData& Data) const;
 };
