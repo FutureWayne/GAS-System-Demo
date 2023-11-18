@@ -13,7 +13,7 @@ void UAuraAbilitySystemComponent::EffectApplied(UAbilitySystemComponent* Ability
 {
 	FGameplayTagContainer AssetTagContainer;
 	SpecApplied.GetAllAssetTags(AssetTagContainer);
-
+	
 	// Broadcast to widget controller
 	OnEffectAssetTags.Broadcast(AssetTagContainer);
 }
